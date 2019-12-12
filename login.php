@@ -1,6 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+ini_set('display_errors',1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,22 +39,39 @@
                     </div>
                     <div class="row mt-2">
                         <div class="col-12">
-                            <form action="index.html" method="post" class="tm-login-form">
+                            
+                            
+                            <!-- FORM -->
+                            <form action="loginAction.php" method="POST" class="tm-login-form">
+                            
+                                <!-- USERNAME -->
                                 <div class="input-group">
                                     <label for="username" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-form-label">Username</label>
-                                    <input name="username" type="text" class="form-control validate col-xl-9 col-lg-8 col-md-8 col-sm-7" id="username" value="admin" required>
+                                    <input name="username" type="text" class="form-control validate col-xl-9 col-lg-8 col-md-8 col-sm-7" id="username" required>
                                 </div>
+                                <!-- USERNAME -->                                
+                                
+                                <!-- PASSWORD LABEL -->
                                 <div class="input-group mt-3">
                                     <label for="password" class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-form-label">Password</label>
-                                    <input name="password" type="password" class="form-control validate" id="password" value="1234" required>
+                                    <input name="password" type="password" class="form-control validate" required>
                                 </div>
+                                <!-- PASSWORD LABEL -->
+                                
+                                <!-- LOGIN BUTTON -->
                                 <div class="input-group mt-3">
                                     <button type="submit" class="btn btn-primary d-inline-block mx-auto">Login</button>
                                 </div>
                                 <div class="input-group mt-3">
-                                    <p><em>Just put a character to login.</em></p>
+                                <!-- LOGIN BUTTON -->
+                                
+                                    <p><em></em></p>
                                 </div>
+                                
                             </form>
+                            <!-- FORM -->
+                            
+                            
                         </div>
                     </div>
                 </div>
@@ -59,8 +80,7 @@
         <footer class="row tm-mt-big">
             <div class="col-12 font-weight-light text-center">
                 <p class="d-inline-block tm-bg-black text-white py-2 px-4">
-                    Copyright &copy; 2018 Admin Dashboard . Created by
-                    <a rel="nofollow" href="https://www.tooplate.com" class="text-white tm-footer-link">Tooplate</a>
+                    Copyright &copy; 2019 Jaysen Javier .
                 </p>
             </div>
         </footer>
@@ -68,3 +88,4 @@
 </body>
 
 </html>
+
